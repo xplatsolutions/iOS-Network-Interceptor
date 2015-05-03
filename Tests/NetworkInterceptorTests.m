@@ -1,29 +1,35 @@
 //
-//  ViewController.m
+//  NetworkInterceptorTests.m
 //  NetworkInterceptor
 //
 //  Created by Georgios Taskos on 5/3/15.
 //  Copyright (c) 2015 Xplat Solutions. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "XplatNetworkMonitorClient.h"
+
+#import <GRUnit/GRUnit.h>
 #import <AFNetworking/AFNetworking.h>
 
-@interface ViewController ()
+@interface NetworkInterceptorTests : GRTestCase
+
+@property (nonatomic, copy) dispatch_block_t completion;
 
 @end
 
-@implementation ViewController
+@implementation NetworkInterceptorTests
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+- (void)setUp {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkDataIntercepted:) name:kXPLNetworkMonitorNotification object:nil];
-    
     [[XplatNetworkMonitorClient sharedInstance] startMonitoring];
-    
+}
+
+- (void)tearDown {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void) testNSURLConnectionWithCompletion:(dispatch_block_t)completion {
+    self.completion = completion;
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"http://headers.jsontest.com/" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
@@ -32,20 +38,27 @@
     }];
 }
 
+- (void) testNSURLSessionWithCompletion:(dispatch_block_t)completion {
+    self.completion = completion;
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:[NSURL URLWithString:@"http://headers.jsontest.com/"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            NSLog(@"NSURLSession Response");
+    }] resume];
+}
+
 - (void) networkDataIntercepted:(NSNotification*)notification {
+    GRAssertNotNil(notification);
     if (notification) {
+        GRAssertNotNil(notification.userInfo);
         if (notification.userInfo) {
             NetworkModel* networkData = [notification.userInfo objectForKey:kXPLNetworkMonitorDataKey];
+            GRAssertNotNil(networkData);
             if (networkData) {
                 NSLog(@"%@", networkData.description);
+                self.completion();
             }
         }
     }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

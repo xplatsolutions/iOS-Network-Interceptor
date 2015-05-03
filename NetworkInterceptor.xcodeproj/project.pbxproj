@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30F418124CDEE227EC246833 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBDEB6DFB2F91097A13D59F /* libPods-Tests.a */; };
+		458FBD18034405D7DABEE71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F16B50FA5C96B4FF528B94A /* main.m */; };
 		6DB7E5A21AF6BCE60023E803 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5A11AF6BCE60023E803 /* main.m */; };
 		6DB7E5A51AF6BCE60023E803 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5A41AF6BCE60023E803 /* AppDelegate.m */; };
 		6DB7E5A81AF6BCE60023E803 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5A71AF6BCE60023E803 /* ViewController.m */; };
@@ -14,9 +16,49 @@
 		6DB7E5AD1AF6BCE60023E803 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7E5AC1AF6BCE60023E803 /* Images.xcassets */; };
 		6DB7E5B01AF6BCE60023E803 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7E5AE1AF6BCE60023E803 /* LaunchScreen.xib */; };
 		6DB7E5BC1AF6BCE70023E803 /* NetworkInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5BB1AF6BCE70023E803 /* NetworkInterceptorTests.m */; };
+		6DB7E5DD1AF6BD0F0023E803 /* XplatNetworkMonitorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5C81AF6BD0F0023E803 /* XplatNetworkMonitorClient.m */; };
+		6DB7E5E01AF6BD0F0023E803 /* NSURLConnection+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5CE1AF6BD0F0023E803 /* NSURLConnection+Xplat.m */; };
+		6DB7E5E11AF6BD0F0023E803 /* NSURLSession+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D01AF6BD0F0023E803 /* NSURLSession+Xplat.m */; };
+		6DB7E5E21AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D21AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m */; };
+		6DB7E5E31AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D41AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m */; };
+		6DB7E5E41AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D61AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.m */; };
+		6DB7E5E51AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D81AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.m */; };
+		6DB7E5E61AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5DA1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.m */; };
+		6DB7E5E71AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5DC1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.m */; };
+		6DB7E5EB1AF6BE5F0023E803 /* XPLLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5EA1AF6BE5F0023E803 /* XPLLogging.m */; };
+		6DB7E5EF1AF6BEFC0023E803 /* NetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5EE1AF6BEFC0023E803 /* NetworkModel.m */; };
+		6DB7E5F31AF6C1AF0023E803 /* NSDate+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5F21AF6C1AF0023E803 /* NSDate+Xplat.m */; };
+		6DB7E5F71AF6C84F0023E803 /* NSMutableURLRequest+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5F61AF6C84F0023E803 /* NSMutableURLRequest+Xplat.m */; };
+		6DB7E5FA1AF6CDE90023E803 /* XplatURLBlackListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5F91AF6CDE90023E803 /* XplatURLBlackListManager.m */; };
+		6DB7E5FD1AF6CE960023E803 /* NSString+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5FC1AF6CE960023E803 /* NSString+Xplat.m */; };
+		6DB7E6001AF6DB070023E803 /* NetworkInterceptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5FF1AF6DB070023E803 /* NetworkInterceptorTests.m */; };
+		6DB7E6011AF6DD1D0023E803 /* NSString+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5FC1AF6CE960023E803 /* NSString+Xplat.m */; };
+		6DB7E6021AF6DD1D0023E803 /* NSMutableURLRequest+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5F61AF6C84F0023E803 /* NSMutableURLRequest+Xplat.m */; };
+		6DB7E6031AF6DD1D0023E803 /* NSDate+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5F21AF6C1AF0023E803 /* NSDate+Xplat.m */; };
+		6DB7E6041AF6DD1D0023E803 /* NetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5EE1AF6BEFC0023E803 /* NetworkModel.m */; };
+		6DB7E6051AF6DD1D0023E803 /* XPLLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5EA1AF6BE5F0023E803 /* XPLLogging.m */; };
+		6DB7E6061AF6DD1D0023E803 /* XplatURLBlackListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5F91AF6CDE90023E803 /* XplatURLBlackListManager.m */; };
+		6DB7E6071AF6DD1D0023E803 /* XplatNetworkMonitorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5C81AF6BD0F0023E803 /* XplatNetworkMonitorClient.m */; };
+		6DB7E6081AF6DD1D0023E803 /* NSURLConnection+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5CE1AF6BD0F0023E803 /* NSURLConnection+Xplat.m */; };
+		6DB7E6091AF6DD1D0023E803 /* NSURLSession+Xplat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D01AF6BD0F0023E803 /* NSURLSession+Xplat.m */; };
+		6DB7E60A1AF6DD1D0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D21AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m */; };
+		6DB7E60B1AF6DD1D0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D41AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m */; };
+		6DB7E60C1AF6DD1D0023E803 /* XplatNSURLSessionDataTaskInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D61AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.m */; };
+		6DB7E60D1AF6DD1D0023E803 /* XplatNSURLSessionDataTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5D81AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.m */; };
+		6DB7E60E1AF6DD1D0023E803 /* XplatNSURLSessionDownloadTaskInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5DA1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.m */; };
+		6DB7E60F1AF6DD1D0023E803 /* XplatNSURLSessionDownloadTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7E5DC1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.m */; };
+		9C08CC00D3E49F84BE0492F9 /* libPods-NetworkInterceptor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9775EC48E5F5D2BAFEC885E8 /* libPods-NetworkInterceptor.a */; };
+		EEB1BD7D10F74D04D20807C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD65F9251BFED8860D88DC7E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0AB70C7AB8F5326D29FF7E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB7E5941AF6BCE60023E803 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB7E59B1AF6BCE60023E803;
+			remoteInfo = NetworkInterceptor;
+		};
 		6DB7E5B61AF6BCE70023E803 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB7E5941AF6BCE60023E803 /* Project object */;
@@ -27,6 +69,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EBD2F62149B4BCA54BC02EE /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35ADAE4766840B6E2340E2D0 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BBDEB6DFB2F91097A13D59F /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64696E0057DD88E758156A32 /* Pods-NetworkInterceptor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInterceptor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInterceptor/Pods-NetworkInterceptor.debug.xcconfig"; sourceTree = "<group>"; };
 		6DB7E59C1AF6BCE60023E803 /* NetworkInterceptor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkInterceptor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB7E5A01AF6BCE60023E803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DB7E5A11AF6BCE60023E803 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,13 +86,60 @@
 		6DB7E5B51AF6BCE70023E803 /* NetworkInterceptorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkInterceptorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB7E5BA1AF6BCE70023E803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DB7E5BB1AF6BCE70023E803 /* NetworkInterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkInterceptorTests.m; sourceTree = "<group>"; };
+		6DB7E5C61AF6BD0F0023E803 /* InterceptorLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterceptorLog.h; sourceTree = "<group>"; };
+		6DB7E5C71AF6BD0F0023E803 /* XplatNetworkMonitorClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatNetworkMonitorClient.h; sourceTree = "<group>"; };
+		6DB7E5C81AF6BD0F0023E803 /* XplatNetworkMonitorClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatNetworkMonitorClient.m; sourceTree = "<group>"; };
+		6DB7E5CD1AF6BD0F0023E803 /* NSURLConnection+Xplat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+Xplat.h"; sourceTree = "<group>"; };
+		6DB7E5CE1AF6BD0F0023E803 /* NSURLConnection+Xplat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+Xplat.m"; sourceTree = "<group>"; };
+		6DB7E5CF1AF6BD0F0023E803 /* NSURLSession+Xplat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Xplat.h"; sourceTree = "<group>"; };
+		6DB7E5D01AF6BD0F0023E803 /* NSURLSession+Xplat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Xplat.m"; sourceTree = "<group>"; };
+		6DB7E5D11AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatNSURLConnectionDataDelegateInterceptor.h; sourceTree = "<group>"; };
+		6DB7E5D21AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatNSURLConnectionDataDelegateInterceptor.m; sourceTree = "<group>"; };
+		6DB7E5D31AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatNSURLSessionDataDelegateInterceptor.h; sourceTree = "<group>"; };
+		6DB7E5D41AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatNSURLSessionDataDelegateInterceptor.m; sourceTree = "<group>"; };
+		6DB7E5D51AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatNSURLSessionDataTaskInfo.h; sourceTree = "<group>"; };
+		6DB7E5D61AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatNSURLSessionDataTaskInfo.m; sourceTree = "<group>"; };
+		6DB7E5D71AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatNSURLSessionDataTaskManager.h; sourceTree = "<group>"; };
+		6DB7E5D81AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatNSURLSessionDataTaskManager.m; sourceTree = "<group>"; };
+		6DB7E5D91AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatNSURLSessionDownloadTaskInfo.h; sourceTree = "<group>"; };
+		6DB7E5DA1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatNSURLSessionDownloadTaskInfo.m; sourceTree = "<group>"; };
+		6DB7E5DB1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatNSURLSessionDownloadTaskManager.h; sourceTree = "<group>"; };
+		6DB7E5DC1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatNSURLSessionDownloadTaskManager.m; sourceTree = "<group>"; };
+		6DB7E5E91AF6BE5F0023E803 /* XPLLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPLLogging.h; path = Logging/XPLLogging.h; sourceTree = "<group>"; };
+		6DB7E5EA1AF6BE5F0023E803 /* XPLLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPLLogging.m; path = Logging/XPLLogging.m; sourceTree = "<group>"; };
+		6DB7E5ED1AF6BEFC0023E803 /* NetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkModel.h; path = Models/NetworkModel.h; sourceTree = "<group>"; };
+		6DB7E5EE1AF6BEFC0023E803 /* NetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkModel.m; path = Models/NetworkModel.m; sourceTree = "<group>"; };
+		6DB7E5F11AF6C1AF0023E803 /* NSDate+Xplat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Xplat.h"; path = "Extensions/NSDate+Xplat.h"; sourceTree = "<group>"; };
+		6DB7E5F21AF6C1AF0023E803 /* NSDate+Xplat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Xplat.m"; path = "Extensions/NSDate+Xplat.m"; sourceTree = "<group>"; };
+		6DB7E5F51AF6C84F0023E803 /* NSMutableURLRequest+Xplat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Xplat.h"; path = "Extensions/NSMutableURLRequest+Xplat.h"; sourceTree = "<group>"; };
+		6DB7E5F61AF6C84F0023E803 /* NSMutableURLRequest+Xplat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Xplat.m"; path = "Extensions/NSMutableURLRequest+Xplat.m"; sourceTree = "<group>"; };
+		6DB7E5F81AF6CDE90023E803 /* XplatURLBlackListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XplatURLBlackListManager.h; sourceTree = "<group>"; };
+		6DB7E5F91AF6CDE90023E803 /* XplatURLBlackListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XplatURLBlackListManager.m; sourceTree = "<group>"; };
+		6DB7E5FB1AF6CE960023E803 /* NSString+Xplat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Xplat.h"; path = "Extensions/NSString+Xplat.h"; sourceTree = "<group>"; };
+		6DB7E5FC1AF6CE960023E803 /* NSString+Xplat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Xplat.m"; path = "Extensions/NSString+Xplat.m"; sourceTree = "<group>"; };
+		6DB7E5FF1AF6DB070023E803 /* NetworkInterceptorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkInterceptorTests.m; path = Tests/NetworkInterceptorTests.m; sourceTree = "<group>"; };
+		7F16B50FA5C96B4FF528B94A /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Tests/main.m; sourceTree = "<group>"; };
+		9775EC48E5F5D2BAFEC885E8 /* libPods-NetworkInterceptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkInterceptor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD65F9251BFED8860D88DC7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C934B277782E76FA3A984D63 /* Pods-NetworkInterceptor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkInterceptor.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkInterceptor/Pods-NetworkInterceptor.release.xcconfig"; sourceTree = "<group>"; };
+		F34DBFFFFFD95A59DD3A7D83 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09063BF701D4D5C0D0909DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB1BD7D10F74D04D20807C0 /* Foundation.framework in Frameworks */,
+				30F418124CDEE227EC246833 /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DB7E5991AF6BCE60023E803 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C08CC00D3E49F84BE0492F9 /* libPods-NetworkInterceptor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +153,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08F25E4C99DADA5BC2B76DDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64696E0057DD88E758156A32 /* Pods-NetworkInterceptor.debug.xcconfig */,
+				C934B277782E76FA3A984D63 /* Pods-NetworkInterceptor.release.xcconfig */,
+				F34DBFFFFFD95A59DD3A7D83 /* Pods-Tests.release.xcconfig */,
+				35ADAE4766840B6E2340E2D0 /* Pods-Tests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20E807E07773595F39A1AE8D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BD65F9251BFED8860D88DC7E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		6DB7E5931AF6BCE60023E803 = {
 			isa = PBXGroup;
 			children = (
 				6DB7E59E1AF6BCE60023E803 /* NetworkInterceptor */,
 				6DB7E5B81AF6BCE70023E803 /* NetworkInterceptorTests */,
 				6DB7E59D1AF6BCE60023E803 /* Products */,
+				08F25E4C99DADA5BC2B76DDE /* Pods */,
+				A5196711F55908E24E0BA541 /* Frameworks */,
+				AAE74BAFC809B6600C902DB1 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +189,7 @@
 			children = (
 				6DB7E59C1AF6BCE60023E803 /* NetworkInterceptor.app */,
 				6DB7E5B51AF6BCE70023E803 /* NetworkInterceptorTests.xctest */,
+				1EBD2F62149B4BCA54BC02EE /* Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +197,10 @@
 		6DB7E59E1AF6BCE60023E803 /* NetworkInterceptor */ = {
 			isa = PBXGroup;
 			children = (
+				6DB7E5F01AF6C1510023E803 /* Extensions */,
+				6DB7E5EC1AF6BECB0023E803 /* Models */,
+				6DB7E5E81AF6BE290023E803 /* Logging */,
+				6DB7E5C51AF6BD0F0023E803 /* NetworkMonitor */,
 				6DB7E5A31AF6BCE60023E803 /* AppDelegate.h */,
 				6DB7E5A41AF6BCE60023E803 /* AppDelegate.m */,
 				6DB7E5A61AF6BCE60023E803 /* ViewController.h */,
@@ -119,16 +239,116 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6DB7E5C51AF6BD0F0023E803 /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7E5F81AF6CDE90023E803 /* XplatURLBlackListManager.h */,
+				6DB7E5F91AF6CDE90023E803 /* XplatURLBlackListManager.m */,
+				6DB7E5C61AF6BD0F0023E803 /* InterceptorLog.h */,
+				6DB7E5C71AF6BD0F0023E803 /* XplatNetworkMonitorClient.h */,
+				6DB7E5C81AF6BD0F0023E803 /* XplatNetworkMonitorClient.m */,
+				6DB7E5CD1AF6BD0F0023E803 /* NSURLConnection+Xplat.h */,
+				6DB7E5CE1AF6BD0F0023E803 /* NSURLConnection+Xplat.m */,
+				6DB7E5CF1AF6BD0F0023E803 /* NSURLSession+Xplat.h */,
+				6DB7E5D01AF6BD0F0023E803 /* NSURLSession+Xplat.m */,
+				6DB7E5D11AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.h */,
+				6DB7E5D21AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m */,
+				6DB7E5D31AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.h */,
+				6DB7E5D41AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m */,
+				6DB7E5D51AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.h */,
+				6DB7E5D61AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.m */,
+				6DB7E5D71AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.h */,
+				6DB7E5D81AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.m */,
+				6DB7E5D91AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.h */,
+				6DB7E5DA1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.m */,
+				6DB7E5DB1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.h */,
+				6DB7E5DC1AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.m */,
+			);
+			path = NetworkMonitor;
+			sourceTree = "<group>";
+		};
+		6DB7E5E81AF6BE290023E803 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7E5E91AF6BE5F0023E803 /* XPLLogging.h */,
+				6DB7E5EA1AF6BE5F0023E803 /* XPLLogging.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		6DB7E5EC1AF6BECB0023E803 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7E5ED1AF6BEFC0023E803 /* NetworkModel.h */,
+				6DB7E5EE1AF6BEFC0023E803 /* NetworkModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6DB7E5F01AF6C1510023E803 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7E5FB1AF6CE960023E803 /* NSString+Xplat.h */,
+				6DB7E5FC1AF6CE960023E803 /* NSString+Xplat.m */,
+				6DB7E5F51AF6C84F0023E803 /* NSMutableURLRequest+Xplat.h */,
+				6DB7E5F61AF6C84F0023E803 /* NSMutableURLRequest+Xplat.m */,
+				6DB7E5F11AF6C1AF0023E803 /* NSDate+Xplat.h */,
+				6DB7E5F21AF6C1AF0023E803 /* NSDate+Xplat.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A5196711F55908E24E0BA541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20E807E07773595F39A1AE8D /* iOS */,
+				4BBDEB6DFB2F91097A13D59F /* libPods-Tests.a */,
+				9775EC48E5F5D2BAFEC885E8 /* libPods-NetworkInterceptor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAE74BAFC809B6600C902DB1 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F16B50FA5C96B4FF528B94A /* main.m */,
+				6DB7E5FF1AF6DB070023E803 /* NetworkInterceptorTests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5F932B281B14983E12C8EA0B /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE0292F480B9B4A679AD5C2 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				BEA203DD505786353BFED14C /* Check Pods Manifest.lock */,
+				2A69E50E7DA621E7694D3DA2 /* Sources */,
+				09063BF701D4D5C0D0909DDB /* Frameworks */,
+				8176EBF7A56693A060B3DF26 /* Resources */,
+				B8B4A079CC1503CAFAE14A98 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A6A7F4095E05681A27DC119 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 1EBD2F62149B4BCA54BC02EE /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6DB7E59B1AF6BCE60023E803 /* NetworkInterceptor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB7E5BF1AF6BCE70023E803 /* Build configuration list for PBXNativeTarget "NetworkInterceptor" */;
 			buildPhases = (
+				202EBCFB5A214FEA5BEA056E /* Check Pods Manifest.lock */,
 				6DB7E5981AF6BCE60023E803 /* Sources */,
 				6DB7E5991AF6BCE60023E803 /* Frameworks */,
 				6DB7E59A1AF6BCE60023E803 /* Resources */,
+				EBF95232C44215E8A22E98E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +410,7 @@
 			targets = (
 				6DB7E59B1AF6BCE60023E803 /* NetworkInterceptor */,
 				6DB7E5B41AF6BCE70023E803 /* NetworkInterceptorTests */,
+				5F932B281B14983E12C8EA0B /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,16 +433,125 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8176EBF7A56693A060B3DF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		202EBCFB5A214FEA5BEA056E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8B4A079CC1503CAFAE14A98 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA203DD505786353BFED14C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF95232C44215E8A22E98E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkInterceptor/Pods-NetworkInterceptor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2A69E50E7DA621E7694D3DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB7E60B1AF6DD1D0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m in Sources */,
+				6DB7E6071AF6DD1D0023E803 /* XplatNetworkMonitorClient.m in Sources */,
+				6DB7E60A1AF6DD1D0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m in Sources */,
+				6DB7E60F1AF6DD1D0023E803 /* XplatNSURLSessionDownloadTaskManager.m in Sources */,
+				458FBD18034405D7DABEE71A /* main.m in Sources */,
+				6DB7E60C1AF6DD1D0023E803 /* XplatNSURLSessionDataTaskInfo.m in Sources */,
+				6DB7E60D1AF6DD1D0023E803 /* XplatNSURLSessionDataTaskManager.m in Sources */,
+				6DB7E60E1AF6DD1D0023E803 /* XplatNSURLSessionDownloadTaskInfo.m in Sources */,
+				6DB7E6081AF6DD1D0023E803 /* NSURLConnection+Xplat.m in Sources */,
+				6DB7E6051AF6DD1D0023E803 /* XPLLogging.m in Sources */,
+				6DB7E6021AF6DD1D0023E803 /* NSMutableURLRequest+Xplat.m in Sources */,
+				6DB7E6041AF6DD1D0023E803 /* NetworkModel.m in Sources */,
+				6DB7E6011AF6DD1D0023E803 /* NSString+Xplat.m in Sources */,
+				6DB7E6091AF6DD1D0023E803 /* NSURLSession+Xplat.m in Sources */,
+				6DB7E6061AF6DD1D0023E803 /* XplatURLBlackListManager.m in Sources */,
+				6DB7E6001AF6DB070023E803 /* NetworkInterceptorTests.m in Sources */,
+				6DB7E6031AF6DD1D0023E803 /* NSDate+Xplat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DB7E5981AF6BCE60023E803 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB7E5E61AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskInfo.m in Sources */,
+				6DB7E5E41AF6BD0F0023E803 /* XplatNSURLSessionDataTaskInfo.m in Sources */,
 				6DB7E5A81AF6BCE60023E803 /* ViewController.m in Sources */,
+				6DB7E5F71AF6C84F0023E803 /* NSMutableURLRequest+Xplat.m in Sources */,
 				6DB7E5A51AF6BCE60023E803 /* AppDelegate.m in Sources */,
+				6DB7E5E11AF6BD0F0023E803 /* NSURLSession+Xplat.m in Sources */,
+				6DB7E5E71AF6BD0F0023E803 /* XplatNSURLSessionDownloadTaskManager.m in Sources */,
+				6DB7E5F31AF6C1AF0023E803 /* NSDate+Xplat.m in Sources */,
+				6DB7E5E21AF6BD0F0023E803 /* XplatNSURLConnectionDataDelegateInterceptor.m in Sources */,
+				6DB7E5E51AF6BD0F0023E803 /* XplatNSURLSessionDataTaskManager.m in Sources */,
+				6DB7E5EF1AF6BEFC0023E803 /* NetworkModel.m in Sources */,
+				6DB7E5DD1AF6BD0F0023E803 /* XplatNetworkMonitorClient.m in Sources */,
+				6DB7E5E01AF6BD0F0023E803 /* NSURLConnection+Xplat.m in Sources */,
+				6DB7E5FD1AF6CE960023E803 /* NSString+Xplat.m in Sources */,
+				6DB7E5EB1AF6BE5F0023E803 /* XPLLogging.m in Sources */,
 				6DB7E5A21AF6BCE60023E803 /* main.m in Sources */,
+				6DB7E5E31AF6BD0F0023E803 /* XplatNSURLSessionDataDelegateInterceptor.m in Sources */,
+				6DB7E5FA1AF6CDE90023E803 /* XplatURLBlackListManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +566,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6A6A7F4095E05681A27DC119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkInterceptor;
+			target = 6DB7E59B1AF6BCE60023E803 /* NetworkInterceptor */;
+			targetProxy = 0AB70C7AB8F5326D29FF7E53 /* PBXContainerItemProxy */;
+		};
 		6DB7E5B71AF6BCE70023E803 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6DB7E59B1AF6BCE60023E803 /* NetworkInterceptor */;
@@ -263,6 +599,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4015D69A047BDF3A6D35FFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35ADAE4766840B6E2340E2D0 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4EABE29A8D33D1C2BB5D9F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F34DBFFFFFD95A59DD3A7D83 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 		6DB7E5BD1AF6BCE70023E803 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -347,6 +715,7 @@
 		};
 		6DB7E5C01AF6BCE70023E803 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64696E0057DD88E758156A32 /* Pods-NetworkInterceptor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NetworkInterceptor/Info.plist;
@@ -357,6 +726,7 @@
 		};
 		6DB7E5C11AF6BCE70023E803 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C934B277782E76FA3A984D63 /* Pods-NetworkInterceptor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NetworkInterceptor/Info.plist;
@@ -418,6 +788,7 @@
 				6DB7E5C11AF6BCE70023E803 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DB7E5C21AF6BCE70023E803 /* Build configuration list for PBXNativeTarget "NetworkInterceptorTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +797,16 @@
 				6DB7E5C41AF6BCE70023E803 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE0292F480B9B4A679AD5C2 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EABE29A8D33D1C2BB5D9F94 /* Release */,
+				4015D69A047BDF3A6D35FFAA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
